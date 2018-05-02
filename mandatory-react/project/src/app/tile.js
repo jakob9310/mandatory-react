@@ -18,6 +18,8 @@ import React from 'react';
 
 export default function Tile(props){
   return (
-    <div>To be implemented...</div>
+      <div className={"tile " + (props.line ? "line " : "") + (props.piece === 0 ? "" : props.piece === 1 ? "plr1" : "plr2")} onClick={props.callback}>
+          {props.piece === 0 ? "" : props.piece === 1 ? "X" : "O"}
+      </div>
   );
 }

@@ -9,6 +9,8 @@ import React from 'react';
 
 export default function Message(props){
   return (
-    <div>To be implemented...</div>
+    <div>
+      <p>{props.state}</p>
+    </div>
   );
 }
