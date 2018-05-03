@@ -10,7 +10,7 @@ import React from 'react';
 export default function Message(props){
   return (
     <div>
-      <p>{props.state}</p>
+      <p>{props.state}<span>'s turn</span></p>
     </div>
   );
 }
